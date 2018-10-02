@@ -1,0 +1,120 @@
+html, body {
+    background-color: darkgray;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;   
+}
+
+.line:nth-child(1) {
+    animation: cross 3s alternate infinite;
+    transform-origin: center;
+}
+.line:nth-child(2) {
+    animation: hide 3s alternate infinite;
+    
+}
+.line:nth-child(3) {
+    animation: cross2 3s alternate infinite;
+    transform-origin: center;
+}
+
+@keyframes cross {
+    0%{
+      transform: rotate(0deg); 
+      transform: translateY(0);
+    }
+    15%{
+      transform: translateY(-2px);
+    }
+    20%{
+       transform: translateY(2px); 
+    }
+    25%{
+        transform: translateY(-1px);
+    }
+    26%{
+        transform: translateY(0);
+    }
+    80%{
+      transform: rotate(46deg) translateY(35px);
+        transform-origin: center;
+        stroke: red;
+    }
+    
+    85%{
+      transform: rotate(46deg) translateY(35px);
+        transform-origin: center;
+         stroke: red;
+    }
+    90%{
+      transform: rotate(44deg) translateY(35px);
+        transform-origin: center;
+         stroke: red;
+    }
+    100%{
+       transform: rotate(45deg) translateY(35px);
+        transform-origin: center;
+         stroke: red;
+    }
+}
+
+@keyframes cross2 {
+    0%{
+      transform: rotate(0deg); 
+      transform: translateY(0);
+    }
+    10%{
+      transform: translateY(2px);
+    }
+    15%{
+       transform: translateY(-2px); 
+    }
+    20%{
+        transform: translateY(1px);
+    }
+    30%{
+        transform: translateY(0);
+    }
+    75%{
+      transform: rotate(-46deg) translateY(-35px);
+        transform-origin: center;
+         stroke: red;
+    }
+    
+    85%{
+      transform: rotate(-46deg) translateY(-35px);
+        transform-origin: center;
+         stroke: red;
+    }
+    90%{
+      transform: rotate(-44deg) translateY(-35px);
+        transform-origin: center;
+         stroke: red;
+    }
+    100%{
+       transform: rotate(-45deg) translateY(-35px);
+        transform-origin: center;
+         stroke: red;
+    }
+}
+
+@keyframes hide {
+    0%{
+      transform: rotate(0deg); 
+      transform: translateY(0);
+        stroke-width: 20;
+    }
+    75%{
+       stroke-width: 0;
+    }
+    100%{
+       stroke-width: 0;
+    }
+}
+

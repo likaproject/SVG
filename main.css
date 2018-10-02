@@ -1,0 +1,45 @@
+body, html {
+    background-color: #ffffff;
+}
+
+svg {
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+}
+
+#arc {
+    animation: turn 1s linear infinite;
+    stroke-linecap: round;
+}
+
+@keyframes turn {
+    0% {
+        stroke-dasharray: 50 1000;
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dasharray: 50 1000;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

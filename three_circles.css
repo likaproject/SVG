@@ -1,0 +1,41 @@
+body, html {
+    background-color: black;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+svg {
+    width: 200px;
+    height: 200px;
+}
+
+.arc1 {
+    animation: turn 3s linear infinite;
+    stroke-linecap: round;
+}
+.arc2 {
+    animation: turn 3s  infinite;
+    animation-timing-function: cubic-bezier(0.1,2,5,5);
+    stroke-linecap: round;
+}
+.arc3 {
+    animation: turn 3s  infinite;
+    animation-timing-function: cubic-bezier(0.1,1,0.25,1);
+    stroke-linecap: round;
+}
+@keyframes turn {
+    0% {
+        stroke-dasharray: 5 1000;
+       
+    }
+    100% {
+        stroke-dasharray: 500 1000;
+        
+    }
+}
